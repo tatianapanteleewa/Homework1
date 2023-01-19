@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    height: 1024px;
+    background-image: url(Img/top\ bcg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: 32px;
+        margin-bottom: 44px;
+    }
+
+    &__tittle {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: #FFFFFF;
+        padding-top: 217px;
+        grid-column: span 8;
+
+
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        grid-column: span 5;
+    }
+
+    &__button {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        background: #9C0332;
+        border-radius: 30px;
+        width: 234px;
+        height: 49px;
+    }
+}
+
+.game {
+
+    background: #000915;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__text {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding-bottom: 32px;
+        padding-left: 32px;
+    }
+
+
+    &__item {
+        height: 300px;
+        grid-column: span 4;
+        margin-top: 128px;
+        margin-bottom: 128px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &_1 {
+            background-image: url(Img/game1.jpg);
+            background-repeat: no-repeat;
+        }
+
+        &_2 {
+            background-image: url(Img/game2.jpg);
+            background-repeat: no-repeat;
+        }
+
+        &_3 {
+            background-image: url(Img/game3.jpg);
+            background-repeat: no-repeat;
+        }
+    }
+}
