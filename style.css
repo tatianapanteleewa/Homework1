@@ -86,4 +86,41 @@ body {
 .game__item_3 {
   background-image: url(Img/game3.jpg);
   background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .top__tittle {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .top__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .game__item {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
