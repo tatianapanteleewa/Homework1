@@ -101,4 +101,62 @@ body {
     }
 }
 
+.season {
+    background-color: #000915;
+    padding-bottom: 282px;
+    padding-top: 233px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__content {
+        grid-column: span 6;
+    }
+
+    &__tittle {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        color: #FFFFFF;
+        grid-column: span 4;
+        padding-bottom: 32px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+        grid-column: span 6;
+        padding-bottom: 32px;
+    }
+
+    &__button {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        background: #9C0332;
+        border-radius: 30px;
+        height: 49px;
+        width: 234px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__img-box {
+        grid-column: span 5;
+        padding-left: 135px;
+
+        &_mobile {
+            display: none;
+        }
+    }
+
+}
+
+
+
 @import "mobile";

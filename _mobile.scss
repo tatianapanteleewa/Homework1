@@ -43,4 +43,39 @@
             margin-bottom: 0;
         }
     }
+
+    .season {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__tittle {
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__img-box {
+            display: none;
+
+            &_mobile {
+                display: flex;
+                align-items: center;
+                padding-top: 64px;
+            }
+        }
+    }
+
 }
