@@ -54,6 +54,11 @@ body {
         border-radius: 30px;
         width: 234px;
         height: 49px;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
     }
 }
 
@@ -63,6 +68,7 @@ body {
     display: grid;
     gap: 32px;
     grid-template-columns: repeat(12, 1fr);
+
 
     &__text {
         font-weight: 600;
@@ -83,6 +89,12 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 5px #ccc;
+        }
 
         &_1 {
             background-image: url(Img/game1.jpg);
@@ -143,6 +155,11 @@ body {
         width: 234px;
         display: flex;
         justify-content: center;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.05);
+        }
 
     }
 

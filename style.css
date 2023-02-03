@@ -49,6 +49,10 @@ body {
   border-radius: 30px;
   width: 234px;
   height: 49px;
+  transition: all 0.3s;
+}
+.top__button:hover {
+  transform: scale(1.05);
 }
 
 .game {
@@ -74,6 +78,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  transition: all 0.3s;
+}
+.game__item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
 }
 .game__item_1 {
   background-image: url(Img/game1.jpg);
@@ -127,6 +136,10 @@ body {
   width: 234px;
   display: flex;
   justify-content: center;
+  transition: all 0.3s;
+}
+.season__button:hover {
+  transform: scale(1.05);
 }
 .season__img-box {
   grid-column: span 5;
