@@ -13,3 +13,19 @@ function season() {
         alert('Введено некорректное значение')
     }
 }
+
+function askUser() {
+    let list = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    list = list.sort(() => Math.random() - 0.5);
+    alert(list);
+    let userAnswer1 = prompt('Чему равнялся первый элемент массива?');
+    let userAnswer2 = prompt('Чему равнялся последний элемент массива?');
+    if (userAnswer1.toLowerCase() === list[0].toLowerCase() && userAnswer2.toLowerCase() === list[6].toLowerCase()) {
+        alert('Поздравляем с победой!');
+    } else if (userAnswer1.toLowerCase() === list[0].toLowerCase() || userAnswer2.toLowerCase() === list[6].toLowerCase()) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('Вы ответили неверно');
+    }
+}
+
